@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Выберите язык</title>
+<link rel="apple-touch-icon" sizes="180x180" href="favicon\apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon\favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon\favicon-16x16.png">
+<link rel="manifest" href="favicon\site.webmanifest">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+/* ... предыдущий CSS код ... */
+
+.flag {
+    width: 100px;
+    height: 100px; /* Задаем фиксированный размер */
+    border: 2px solid #007bff;
+    border-radius: 50%; /* Радиус скругления 50% для круглых изображений */
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Сохраняет пропорции и заполняет контейнер */
+}
+
+/* ... остальной CSS код ... */
+
+
+        .flag-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .flag {
+            width: 100px;
+            height: 60px;
+            border: 2px solid #007bff;
+            border-radius: 5px;
+            overflow: hidden;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .flag:hover {
+            transform: scale(1.1);
+        }
+
+        .flag img {
+            width: 100%;
+            height: auto;
+        }
+
+        .language-text {
+            margin-top: 20px;
+            color: #555;
+        }
+		
+		/* Общие стили для флагов */
+.flag {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #007bff;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flag img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Стили для флага России */
+.flag.russian {
+    width: 80px;
+    height: 80px;
+    background-color: #fff; /* Белый фон для флага России */
+}
+
+.flag.russian img {
+    filter: grayscale(100%); /* Преобразование цветного изображения в черно-белое */
+}
+
+/* Дополнительные стили для всех флагов */
+.flag:hover {
+    transform: scale(1.1); /* Увеличение флага при наведении курсора */
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Выберите язык:</h1>
+		
+        <div class="flag-container">
+            <a href="en.html" class="flag">
+                <img src="images\gb.png" alt="USA Flag">
+            </a>
+            <a href="ru.html" class="flag">
+                <img src="images\ru.png" alt="Russian Flag">
+            </a>
+        </div>
+
+        <div class="language-text">
+            <p>Нажмите на флаг, чтобы выбрать язык</p>
+            <p>Click on a flag to select a language</p>
+        </div>
+    </div>
+</body>
+</html>
